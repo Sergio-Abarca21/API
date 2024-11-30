@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digimon API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Explorador de Digimons</h1>
+    
+    <div class="filters">
+      <input type="text" id="search-name" placeholder="Buscar Digimon por nombre" />
+      <select id="search-level">
+        <option value="">Selecciona un nivel</option>
+        <option value="Fresh">Fresh</option>
+        <option value="In-Training">In-Training</option>
+        <option value="Rookie">Rookie</option>
+        <option value="Champion">Champion</option>
+        <option value="Ultimate">Ultimate</option>
+        <option value="Mega">Mega</option>
+      </select>
+      <button id="fetch-all">Mostrar Todos los Digimons</button>
+    </div>
+    
+    <div id="digimon-list" class="digimon-list">
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
